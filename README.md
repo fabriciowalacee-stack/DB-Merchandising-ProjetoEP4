@@ -14,43 +14,21 @@ O objetivo desse trabalho foi criar um banco de dados do zero para controlar o e
 
 O projeto passou por várias fases (Conceitual, Lógico) e agora chegamos na Implementação Física (SQL).
 
-🛠️ Tecnologias Usadas
+📂 Organização dos Arquivos
 
-🐘 PostgreSQL (Banco de Dados Relacional)
+Os scripts estão numerados e devem ser executados na seguinte ordem para garantir a integridade referencial:
 
-💻 SQL (Linguagem de consulta)
+01_criacao_tabelas.sql: Cria toda a estrutura (DDL).
 
-📝 pgAdmin 4 (Para testar os scripts)
+02_insercao_dados.sql: Insira dados iniciais para teste (DML).
 
-📂 O que tem neste repositório?
+03_consultas.sql: Exemplos de relatórios e dados aleatórios.
 
-O arquivo principal é o script_banco_dados_completo.sql. Ele faz tudo o que foi pedido na atividade:
-
-Cria as Tabelas (DDL):
-
-O banco está na 3ª Forma Normal (3FN).
-
-Tabelas principais: Material, Cliente, Colaborador.
-
-Tabelas de movimento: Entrada (Nota Fiscal) e Saida (Retirada por vendedor).
-
-Insere Dados (DML):
-
-Já deixei o script com dados de exemplo (Marcas reais, clientes fictícios) para testar se tudo funciona.
-
-Manipula Dados:
-
-Comandos de UPDATE (ex: reajustar preço, corrigir e-mail).
-
-Comandos de DELETE (ex: apagar registros errados).
-
-Relatórios (SELECT):
-
-Fiz 5 consultas usando JOIN, GROUP BY e filtros para mostrar informações úteis, como "Quem são os clientes que mais pedem material?".
+04_atualizacao_exclusao.sql: Exemplos de operações de manutenção.
 
 🚀 Como rodar o projeto
 
-Se você quiser testar no seu computador, é bem simples:
+Se você quiser testar no seu computador, siga este passo a passo:
 
 Tenha o PostgreSQL e o pgAdmin instalados.
 
@@ -58,11 +36,17 @@ Crie um banco de dados novo (pode chamar de merchandising_db).
 
 Abra a Query Tool (Ferramenta de Consulta).
 
-Copie todo o código do arquivo script_banco_dados_completo.sql.
+Execute os arquivos um por um, na ordem numérica (01 a 04).
 
-Cole na ferramenta e aperte o botão de Executar (ou F5).
+Dica: Comece pelo arquivo 01, depois o 02, e assim por diante.
 
-Pronto! Todas as tabelas serão criadas e os dados inseridos automaticamente.
+🛠️ Tecnologias Usadas
+
+🐘 PostgreSQL (Banco de Dados Relacional)
+
+💻 SQL (Linguagem de consulta)
+
+📝 pgAdmin 4 (Para testar os scripts)
 
 🧠 O que eu aprendi
 
