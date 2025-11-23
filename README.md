@@ -1,95 +1,77 @@
-📦 Sistema de Gestão de Materiais de Merchandising
+🛒 Sistema de Gestão de Materiais de Merchandising
 
-Atividade: Experiência Prática IV - Implementação e Manipulação de Dados (SQL)
+Trabalho Acadêmico: Experiência Prática IV - Banco de Dados
 
-Curso: Análise e Desenvolvimento de Sistemas
+Aluno: Fabricio Walace Silva
 
-Autor: Fabricio Walace Silva
+Status: Concluído ✅
 
-📖 Sobre o Projeto
+📄 Sobre o Projeto
 
-Este projeto consiste na implementação física do modelo de banco de dados para um Sistema de Gestão de Materiais de Merchandising. O objetivo é controlar o estoque e a movimentação (entradas e saídas) de itens promocionais (como mesas, cadeiras, cervegelas e banners) utilizados por grandes marcas de bebidas em pontos de venda.
+Olá! 👋 Esse repositório contém os scripts SQL do meu projeto de Modelagem de Banco de Dados.
 
-O banco de dados foi modelado seguindo rigorosamente as Formas Normais (até a 3FN) para garantir a integridade e evitar redundância de dados.
+O objetivo desse trabalho foi criar um banco de dados do zero para controlar o estoque de materiais de merchandising (aquelas mesas, cadeiras, baldes de gelo e banners de marcas de bebidas como Heineken e Amstel) que são enviados para bares e restaurantes.
 
-🎯 Objetivos da Atividade
+O projeto passou por várias fases (Conceitual, Lógico) e agora chegamos na Implementação Física (SQL).
 
-Implementação DDL: Criação de tabelas, chaves primárias (PK) e chaves estrangeiras (FK) no PostgreSQL.
+🛠️ Tecnologias Usadas
 
-Manipulação DML: Inserção de dados realistas, atualizações de registros e exclusões lógicas/físicas.
+🐘 PostgreSQL (Banco de Dados Relacional)
 
-Consultas DQL: Elaboração de relatórios complexos utilizando JOIN, GROUP BY e funções de agregação.
+💻 SQL (Linguagem de consulta)
 
-🛠️ Tecnologias Utilizadas
+📝 pgAdmin 4 (Para testar os scripts)
 
-Linguagem: SQL (Structured Query Language)
+📂 O que tem neste repositório?
 
-Banco de Dados: PostgreSQL
+O arquivo principal é o script_banco_dados_completo.sql. Ele faz tudo o que foi pedido na atividade:
 
-Modelagem: brModelo / DBDiagram.io
+Cria as Tabelas (DDL):
 
-Ferramenta de Gestão: pgAdmin 4 / DBeaver
+O banco está na 3ª Forma Normal (3FN).
 
-📂 Estrutura do Banco de Dados
+Tabelas principais: Material, Cliente, Colaborador.
 
-O script script_banco_dados_completo.sql contém toda a estrutura necessária para recriar o banco de dados do zero. As principais tabelas são:
+Tabelas de movimento: Entrada (Nota Fiscal) e Saida (Retirada por vendedor).
 
-Cadastros Principais: Cliente, Colaborador, Material.
+Insere Dados (DML):
 
-Domínios/Categorias: Marca, Tipo_Material, Classe_Material, Cargo.
+Já deixei o script com dados de exemplo (Marcas reais, clientes fictícios) para testar se tudo funciona.
 
-Transacional: Nota_Fiscal_Entrada, Item_Entrada, Saida_Material.
+Manipula Dados:
 
-🚀 Como Executar o Projeto
+Comandos de UPDATE (ex: reajustar preço, corrigir e-mail).
 
-Pré-requisitos
-
-Ter o PostgreSQL instalado em sua máquina.
-
-Ter uma ferramenta cliente (como pgAdmin ou DBeaver).
-
-Passo a Passo
-
-Clone o repositório:
-
-git clone [https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git](https://github.com/SEU-USUARIO/NOME-DO-REPOSITORIO.git)
-
-
-Abra o script SQL:
-Localize o arquivo script_banco_dados_completo.sql na pasta do projeto.
-
-Execute no Banco de Dados:
-
-Crie um novo banco de dados (ex: merchandising_db).
-
-Abra a ferramenta de Query (SQL Editor).
-
-Copie e cole o conteúdo do script.
-
-Execute o script completo (F5 no pgAdmin).
-
-📊 Funcionalidades Demonstradas no Script
-
-O arquivo SQL não apenas cria as tabelas, mas também executa um roteiro de testes completo:
-
-Carga de Dados: Popula o banco com marcas reais (Heineken, Amstel), colaboradores e clientes fictícios.
-
-Atualizações (UPDATE):
-
-Exemplo: Reajuste de 10% nos preços de produtos de uma marca específica.
-
-Exemplo: Atualização de contato de clientes.
+Comandos de DELETE (ex: apagar registros errados).
 
 Relatórios (SELECT):
 
-Saldo de estoque valorizado (Qtd * Valor Unitário).
+Fiz 5 consultas usando JOIN, GROUP BY e filtros para mostrar informações úteis, como "Quem são os clientes que mais pedem material?".
 
-Ranking de clientes que mais solicitam materiais.
+🚀 Como rodar o projeto
 
-Histórico de entradas com detalhes da Nota Fiscal.
+Se você quiser testar no seu computador, é bem simples:
 
-📝 Licença
+Tenha o PostgreSQL e o pgAdmin instalados.
 
-Este projeto foi desenvolvido para fins acadêmicos. Sinta-se à vontade para utilizar como referência de estudo.
+Crie um banco de dados novo (pode chamar de merchandising_db).
 
-Desenvolvido por Fabricio Walace Silva
+Abra a Query Tool (Ferramenta de Consulta).
+
+Copie todo o código do arquivo script_banco_dados_completo.sql.
+
+Cole na ferramenta e aperte o botão de Executar (ou F5).
+
+Pronto! Todas as tabelas serão criadas e os dados inseridos automaticamente.
+
+🧠 O que eu aprendi
+
+Com essa atividade, consegui colocar em prática:
+
+Como transformar o diagrama lógico (desenho) em código CREATE TABLE.
+
+A importância de definir bem as Chaves Estrangeiras (Foreign Keys) para não deixar cadastrar dados órfãos.
+
+Como fazer consultas mais complexas ligando várias tabelas (o famoso INNER JOIN).
+
+Feito por Fabricio Walace Silva para a atividade de Banco de Dados. 🚀
