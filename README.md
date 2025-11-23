@@ -10,7 +10,7 @@ Status: Concluído ✅
 
 Olá! 👋 Esse repositório contém os scripts SQL do meu projeto de Modelagem de Banco de Dados.
 
-O objetivo desse trabalho foi criar um banco de dados do zero para controlar o estoque de materiais de merchandising (aquelas mesas, cadeiras, baldes de gelo e banners de marcas de bebidas como Heineken e Amstel) que são enviados para bares e restaurantes.
+O objetivo desse trabalho foi criar um banco de dados do zero para controlar o estoque de materiais de merchandising ( mesas, cadeiras, baldes de gelo e banners de marcas de bebidas como Heineken e Amstel) que são enviados para bares e restaurantes.
 
 O projeto passou por várias fases (Conceitual, Lógico) e agora chegamos na Implementação Física (SQL).
 
