@@ -4,7 +4,7 @@ Trabalho Acadêmico: Experiência Prática IV - Banco de Dados
 
 Aluno: Fabricio Walace Silva
 
-Status: Concluído 
+Status: Concluído
 
  Sobre o Projeto
 
