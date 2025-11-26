@@ -1,4 +1,4 @@
-# Projeto de Banco de Dados: Controle de Estoque de Merchandising
+# Projeto de Banco de Dados: Sistema de Gestão e Controle de Materiais de Merchandising
 
 Este é meu  projeto prático de banco de dados.
 
