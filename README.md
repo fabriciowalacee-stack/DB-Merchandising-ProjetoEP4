@@ -4,9 +4,7 @@ Trabalho Acadêmico: Experiência Prática IV - Banco de Dados
 
 Aluno: Fabricio Walace Silva
 
-Status: Concluído
-
- Sobre o Projeto
+Sobre o Projeto
 
 Esse repositório contém os scripts SQL do meu projeto de Modelagem de Banco de Dados.
 
@@ -26,7 +24,7 @@ Os scripts estão numerados e devem ser executados na seguinte ordem para garant
 
 04_atualizacao_exclusao.sql: Exemplos de operações de manutenção.
 
- Como rodar o projeto
+Como rodar o projeto
 
 Se você quiser testar no seu computador, siga este passo a passo:
 
