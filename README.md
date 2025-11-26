@@ -38,7 +38,7 @@ Execute os arquivos um por um, na ordem numérica (01 a 04).
 
 Dica: Comece pelo arquivo 01, depois o 02, e assim por diante.
 
-Tecnologias Usadas
+ Tecnologias Usadas
 
 PostgreSQL (Banco de Dados Relacional)
 
