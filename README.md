@@ -1,59 +1,50 @@
-Sistema de Gestão de Materiais de Merchandising
+# Projeto de Banco de Dados: Controle de Estoque de Merchandising
 
-Trabalho Acadêmico: Experiência Prática IV - Banco de Dados
+Este é meu  projeto prático de banco de dados.
 
-Aluno: Fabricio Walace Silva
+O objetivo aqui foi criar um banco de dados do zero usando **SQL** para me ajudar a controlar o estoque de materiais de merchandising.
 
-Sobre o Projeto
+### O que é "Merchandising" aqui?
+São aqueles materiais que marcas de bebidas (tipo Heineken, Amstel) mandam para bares e restaurantes:
+* Mesas e cadeiras
+* Baldes de gelo
+* Banners e luminosos
 
-Esse repositório contém os scripts SQL do meu projeto de Modelagem de Banco de Dados.
+Eu modelei o banco de dados e agora estou na parte de **Implementação** (transformar o desenho em código de verdade!).
 
-O objetivo desse trabalho foi criar um banco de dados do zero para controlar o estoque de materiais de merchandising ( mesas, cadeiras, baldes de gelo e banners de marcas de bebidas como Heineken e Amstel) que são enviados para bares e restaurantes.
+---
 
-O projeto passou por várias fases (Conceitual, Lógico) e agora chegamos na Implementação Física (SQL).
+## Organização dos Arquivos
 
-Organização dos Arquivos
+Aqui você vai encontrar os scripts SQL que eu usei. Eles estão numerados e é **muito importante** que você execute eles nessa ordem para tudo funcionar:
 
-Os scripts estão numerados e devem ser executados na seguinte ordem para garantir a integridade referencial:
+1.  `01_criacao_tabelas.sql`: Onde eu crio toda a estrutura do banco (as tabelas, colunas, etc.).
+2.  `02_insercao_dados.sql`: Arquivo para colocar alguns dados de teste (ex: cadastrar a Heineken, um bar, e um item de estoque).
+3.  `03_consultas.sql`: Exemplos de como buscar informações, como "Quais materiais o Bar do Zé recebeu?".
+4.  `04_atualizacao_exclusao.sql`: Scripts para testar como eu altero ou apago algum dado do banco.
 
-01_criacao_tabelas.sql: Cria toda a estrutura (DDL).
+---
 
-02_insercao_dados.sql: Insira dados iniciais para teste (DML).
+## Como rodar o projeto
 
-03_consultas.sql: Exemplos de relatórios e dados aleatórios.
+Se você quiser testar no seu PC, é simples:
 
-04_atualizacao_exclusao.sql: Exemplos de operações de manutenção.
+1.  Você precisa ter o **PostgreSQL** instalado (é o banco de dados que usei).
+2.  Use o **pgAdmin 4** (ou qualquer ferramenta que você goste) para gerenciar o banco.
+3.  Crie um novo banco de dados. Eu chamei o meu de `merchandising_db`.
+4.  Abra a ferramenta de consulta e execute os arquivos.
+    * **Dica:** Comece pelo **01** e vá até o **04**, um de cada vez.
 
-Como rodar o projeto
+---
 
-Se você quiser testar no seu computador, siga este passo a passo:
+## O que eu aprendi de verdade
 
-Tenha o PostgreSQL e o pgAdmin instalados.
+A parte mais legal foi colocar a mão na massa. Consegui entender melhor:
 
-Crie um banco de dados novo (pode chamar de merchandising_db).
+* Como o **desenho** do banco (o diagrama) vira o código `CREATE TABLE` de verdade.
+* A importância do **Foreign Key** (Chave Estrangeira)! Isso evita que a gente cadastre dados errados, tipo um envio para uma marca que nem existe. É o que mantém o banco "limpo".
+* Fazer consultas complexas usando **INNER JOIN** para ligar várias tabelas e ter relatórios completos.
 
-Abra a Query Tool (Ferramenta de Consulta).
+---
 
-Execute os arquivos um por um, na ordem numérica (01 a 04).
-
-Dica: Comece pelo arquivo 01, depois o 02, e assim por diante.
-
- Tecnologias Usadas
-
-PostgreSQL (Banco de Dados Relacional)
-
-SQL (Linguagem de consulta)
-
-gAdmin 4 (Para testar os scripts)
-
-O que eu aprendi
-
-Com essa atividade, consegui colocar em prática:
-
-Como transformar o diagrama lógico (desenho) em código CREATE TABLE.
-
-A importância de definir bem as Chaves Estrangeiras (Foreign Keys) para não deixar cadastrar dados órfãos.
-
-Como fazer consultas mais complexas ligando várias tabelas (o famoso INNER JOIN).
-
-Feito por Fabricio Walace Silva para a atividade de Banco de Dados. 
+Feito por Fabricio Walace Silva para a atividade de Banco de Dados.
