@@ -1,20 +1,20 @@
-🛒 Sistema de Gestão de Materiais de Merchandising
+Sistema de Gestão de Materiais de Merchandising
 
 Trabalho Acadêmico: Experiência Prática IV - Banco de Dados
 
 Aluno: Fabricio Walace Silva
 
-Status: Concluído ✅
+Status: Concluído 
 
-📄 Sobre o Projeto
+ Sobre o Projeto
 
-Olá! 👋 Esse repositório contém os scripts SQL do meu projeto de Modelagem de Banco de Dados.
+Esse repositório contém os scripts SQL do meu projeto de Modelagem de Banco de Dados.
 
 O objetivo desse trabalho foi criar um banco de dados do zero para controlar o estoque de materiais de merchandising ( mesas, cadeiras, baldes de gelo e banners de marcas de bebidas como Heineken e Amstel) que são enviados para bares e restaurantes.
 
 O projeto passou por várias fases (Conceitual, Lógico) e agora chegamos na Implementação Física (SQL).
 
-📂 Organização dos Arquivos
+Organização dos Arquivos
 
 Os scripts estão numerados e devem ser executados na seguinte ordem para garantir a integridade referencial:
 
@@ -26,7 +26,7 @@ Os scripts estão numerados e devem ser executados na seguinte ordem para garant
 
 04_atualizacao_exclusao.sql: Exemplos de operações de manutenção.
 
-🚀 Como rodar o projeto
+ Como rodar o projeto
 
 Se você quiser testar no seu computador, siga este passo a passo:
 
@@ -40,15 +40,15 @@ Execute os arquivos um por um, na ordem numérica (01 a 04).
 
 Dica: Comece pelo arquivo 01, depois o 02, e assim por diante.
 
-🛠️ Tecnologias Usadas
+Tecnologias Usadas
 
-🐘 PostgreSQL (Banco de Dados Relacional)
+PostgreSQL (Banco de Dados Relacional)
 
-💻 SQL (Linguagem de consulta)
+SQL (Linguagem de consulta)
 
-📝 pgAdmin 4 (Para testar os scripts)
+gAdmin 4 (Para testar os scripts)
 
-🧠 O que eu aprendi
+O que eu aprendi
 
 Com essa atividade, consegui colocar em prática:
 
@@ -58,4 +58,4 @@ A importância de definir bem as Chaves Estrangeiras (Foreign Keys) para não de
 
 Como fazer consultas mais complexas ligando várias tabelas (o famoso INNER JOIN).
 
-Feito por Fabricio Walace Silva para a atividade de Banco de Dados. 🚀
+Feito por Fabricio Walace Silva para a atividade de Banco de Dados. 
